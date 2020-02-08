@@ -47,7 +47,7 @@ class App extends React.PureComponent {
 					});
 				}
 			}, 10);
-			fetch('http://localhost:8081/draw')
+			fetch('/draw')
 				.then(response => {
 					return response.json();
 				})
