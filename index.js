@@ -4,8 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 
-app.use(require('cors')());
-
 async function log(message) {
 	console.log(message);
 	await fs.appendFileSync(path.join(__dirname, 'draw.log'), `${message}\n`);
